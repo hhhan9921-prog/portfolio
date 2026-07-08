@@ -62,7 +62,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 nonHeroReveals.forEach(el => revealObserver.observe(el));
 
 // ============================
-// Work Item Click
+// Work Item Click (精选作品)
 // ============================
 document.querySelectorAll('.work-item').forEach(item => {
     item.addEventListener('click', () => {
@@ -72,6 +72,53 @@ document.querySelectorAll('.work-item').forEach(item => {
         }
     });
 });
+
+// ============================
+// Other Work Card Click (其他作品)
+// ============================
+document.querySelectorAll('.other-work-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const href = card.getAttribute('data-href');
+        if (href && href !== '#') {
+            window.open(href, '_blank');
+        }
+    });
+});
+
+// ============================
+// Other Works — 鼠标拖拽滑动
+// ============================
+const scrollContainer = document.querySelector('.other-works-scroll');
+if (scrollContainer) {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener('mousedown', (e) => {
+        isDown = true;
+        scrollContainer.style.cursor = 'grabbing';
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener('mouseleave', () => {
+        isDown = false;
+        scrollContainer.style.cursor = '';
+    });
+
+    scrollContainer.addEventListener('mouseup', () => {
+        isDown = false;
+        scrollContainer.style.cursor = '';
+    });
+
+    scrollContainer.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
+}
 
 // ============================
 // Smooth Active Nav Link

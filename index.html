@@ -18,7 +18,7 @@
             <div class="nav-links">
                 <a href="#about" class="nav-link">关于</a>
                 <a href="#works" class="nav-link">作品</a>
-                <a href="#process" class="nav-link">流程</a>
+                <a href="#other-works" class="nav-link">其他</a>
                 <a href="#contact" class="nav-link">联系</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="菜单">
@@ -66,6 +66,7 @@
                     <p>
                         相信好的设计是「看不见」的——它让用户自然而然地完成目标，而不会察觉到设计的存在。
                     </p>
+                    <a href="#" class="btn btn-resume" download>下载简历 ↓</a>
                 </div>
                 <div class="about-stats reveal">
                     <div class="stat-item">
@@ -86,17 +87,48 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 工作经历时间轴 -->
+            <div class="timeline-section reveal">
+                <h3 class="timeline-heading">工作经历</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 — 至今</span>
+                            <h4 class="timeline-title">高级 UI/UX 设计师 · 公司名称</h4>
+                            <p class="timeline-desc">负责 XX 产品的整体体验设计，主导设计系统搭建与改版迭代。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 — 2023</span>
+                            <h4 class="timeline-title">UI/UX 设计师 · 公司名称</h4>
+                            <p class="timeline-desc">参与 XX 产品的从 0 到 1 设计，负责核心流程的交互与视觉设计。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020 — 2021</span>
+                            <h4 class="timeline-title">UI 设计实习生 · 公司名称</h4>
+                            <p class="timeline-desc">协助团队完成日常设计任务，参与组件库维护与设计规范输出。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 作品 -->
+    <!-- 精选作品 -->
     <section class="works" id="works">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-num">02</span>
                 <h2 class="section-title">精选作品</h2>
             </div>
-            <div class="works-list">
+            <div class="works-grid">
                 <!-- 项目 1 -->
                 <article class="work-item reveal" data-href="#">
                     <div class="work-thumb">
@@ -172,33 +204,66 @@
         </div>
     </section>
 
-    <!-- 设计流程 -->
-    <section class="process" id="process">
+    <!-- 其他作品 -->
+    <section class="other-works" id="other-works">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-num">03</span>
-                <h2 class="section-title">设计流程</h2>
+                <h2 class="section-title">其他作品</h2>
             </div>
-            <div class="process-grid">
-                <div class="process-item reveal">
-                    <span class="process-step">01</span>
-                    <h3 class="process-name">用户研究</h3>
-                    <p class="process-desc">通过访谈、问卷、竞品分析深入理解用户需求与痛点，建立用户画像。</p>
+            <div class="other-works-scroll-wrapper reveal">
+                <div class="other-works-scroll">
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #f5f5f5, #e8e8e8);">
+                            <span>项目 01</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #eaeaea, #dcdcdc);">
+                            <span>项目 02</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #f0f0f0, #e0e0e0);">
+                            <span>项目 03</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #e8e8e8, #d4d4d4);">
+                            <span>项目 04</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                            <span>项目 05</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #eaeaea, #d8d8d8);">
+                            <span>项目 06</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #f0f0f0, #dcdcdc);">
+                            <span>项目 07</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
+                    <div class="other-work-card" data-href="#">
+                        <div class="other-work-thumb" style="background: linear-gradient(135deg, #e8e8e8, #d0d0d0);">
+                            <span>项目 08</span>
+                        </div>
+                        <span class="other-work-name">小项目名称</span>
+                    </div>
                 </div>
-                <div class="process-item reveal">
-                    <span class="process-step">02</span>
-                    <h3 class="process-name">信息架构</h3>
-                    <p class="process-desc">梳理业务逻辑与信息结构，产出流程图、站点地图，确保体验路径清晰。</p>
-                </div>
-                <div class="process-item reveal">
-                    <span class="process-step">03</span>
-                    <h3 class="process-name">交互设计</h3>
-                    <p class="process-desc">从低保真到高保真原型迭代，关注细节交互与可用性，反复测试验证。</p>
-                </div>
-                <div class="process-item reveal">
-                    <span class="process-step">04</span>
-                    <h3 class="process-name">视觉设计</h3>
-                    <p class="process-desc">建立视觉规范与组件库，输出高质量设计稿，确保设计一致性。</p>
+                <div class="scroll-hint">
+                    <span class="scroll-hint-text">← 滑动查看更多 →</span>
                 </div>
             </div>
         </div>
