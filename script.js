@@ -59,7 +59,14 @@ const revealObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-nonHeroReveals.forEach(el => revealObserver.observe(el));
+nonHeroReveals.forEach(el => {
+    revealObserver.observe(el);
+    // 初始检查：如果元素已经在视口内，立即添加 active 类
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('active');
+    }
+});
 
 // ============================
 // Work Item Click (精选作品)
