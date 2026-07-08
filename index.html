@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name — UI/UX Designer</title>
+    <meta name="description" content="作品集 | UI/UX Designer Portfolio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">YN<span class="nav-logo-dot">.</span></a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#works" class="nav-link">作品</a>
+                <a href="#process" class="nav-link">流程</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 首屏 -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting reveal">你好，我是</p>
+            <h1 class="hero-name reveal">Your Name</h1>
+            <p class="hero-role reveal">UI/UX Designer</p>
+            <p class="hero-desc reveal">
+                专注于用户体验设计与界面视觉设计，<br>
+                善于从用户洞察出发，将复杂问题转化为简洁优雅的设计方案。
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#works" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-ghost">联系我</a>
+            </div>
+        </div>
+        <div class="hero-scroll reveal">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-num">01</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        我是一名拥有 <strong>X 年</strong> 经验的 UI/UX 设计师，致力于创造有温度的数字产品体验。
+                    </p>
+                    <p>
+                        曾参与多个从 0 到 1 的产品设计与改版项目，涵盖电商、社交、工具类应用。擅长用户研究、交互设计、视觉设计全流程，注重数据驱动与设计系统性。
+                    </p>
+                    <p>
+                        相信好的设计是「看不见」的——它让用户自然而然地完成目标，而不会察觉到设计的存在。
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-num">X+</span>
+                        <span class="stat-label">年设计经验</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">XX</span>
+                        <span class="stat-label">完成项目</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">XX</span>
+                        <span class="stat-label">服务客户</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">X</span>
+                        <span class="stat-label">设计奖项</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品 -->
+    <section class="works" id="works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-num">02</span>
+                <h2 class="section-title">精选作品</h2>
+            </div>
+            <div class="works-list">
+                <!-- 项目 1 -->
+                <article class="work-item reveal" data-href="#">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder" style="background: linear-gradient(135deg, #f5f5f5, #e0e0e0);">
+                            <span>项目封面图</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-tag">App Design</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <h3 class="work-title">项目名称一</h3>
+                        <p class="work-desc">一句话描述项目的核心价值与设计亮点，比如：通过重新设计购物流程，提升转化率 30%。</p>
+                        <span class="work-link">查看详情 →</span>
+                    </div>
+                </article>
+
+                <!-- 项目 2 -->
+                <article class="work-item reveal" data-href="#">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder" style="background: linear-gradient(135deg, #e8e8e8, #d0d0d0);">
+                            <span>项目封面图</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-tag">Web Design</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <h3 class="work-title">项目名称二</h3>
+                        <p class="work-desc">一句话描述项目背景与设计成果，比如：为 B 端管理后台建立设计系统，提升团队协作效率。</p>
+                        <span class="work-link">查看详情 →</span>
+                    </div>
+                </article>
+
+                <!-- 项目 3 -->
+                <article class="work-item reveal" data-href="#">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder" style="background: linear-gradient(135deg, #f0f0f0, #d8d8d8);">
+                            <span>项目封面图</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-tag">Design System</span>
+                            <span class="work-year">2023</span>
+                        </div>
+                        <h3 class="work-title">项目名称三</h3>
+                        <p class="work-desc">一句话描述项目的设计挑战与解决方案，比如：从零搭建组件库，覆盖 50+ 业务场景。</p>
+                        <span class="work-link">查看详情 →</span>
+                    </div>
+                </article>
+
+                <!-- 项目 4 -->
+                <article class="work-item reveal" data-href="#">
+                    <div class="work-thumb">
+                        <div class="work-thumb-placeholder" style="background: linear-gradient(135deg, #eaeaea, #c8c8c8);">
+                            <span>项目封面图</span>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-tag">Brand & Visual</span>
+                            <span class="work-year">2023</span>
+                        </div>
+                        <h3 class="work-title">项目名称四</h3>
+                        <p class="work-desc">一句话描述品牌设计思路与视觉表达，比如：打造年轻化的品牌视觉语言，重塑产品形象。</p>
+                        <span class="work-link">查看详情 →</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 设计流程 -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-num">03</span>
+                <h2 class="section-title">设计流程</h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-item reveal">
+                    <span class="process-step">01</span>
+                    <h3 class="process-name">用户研究</h3>
+                    <p class="process-desc">通过访谈、问卷、竞品分析深入理解用户需求与痛点，建立用户画像。</p>
+                </div>
+                <div class="process-item reveal">
+                    <span class="process-step">02</span>
+                    <h3 class="process-name">信息架构</h3>
+                    <p class="process-desc">梳理业务逻辑与信息结构，产出流程图、站点地图，确保体验路径清晰。</p>
+                </div>
+                <div class="process-item reveal">
+                    <span class="process-step">03</span>
+                    <h3 class="process-name">交互设计</h3>
+                    <p class="process-desc">从低保真到高保真原型迭代，关注细节交互与可用性，反复测试验证。</p>
+                </div>
+                <div class="process-item reveal">
+                    <span class="process-step">04</span>
+                    <h3 class="process-name">视觉设计</h3>
+                    <p class="process-desc">建立视觉规范与组件库，输出高质量设计稿，确保设计一致性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <p class="contact-label">有兴趣合作？</p>
+                <h2 class="contact-title">让我们聊聊你的项目</h2>
+                <a href="mailto:your.email@example.com" class="contact-email">your.email@example.com</a>
+                <div class="contact-socials">
+                    <a href="#" class="contact-social">微信</a>
+                    <span class="contact-divider">/</span>
+                    <a href="#" class="contact-social">站酷</a>
+                    <span class="contact-divider">/</span>
+                    <a href="#" class="contact-social">Figma</a>
+                    <span class="contact-divider">/</span>
+                    <a href="#" class="contact-social">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 Your Name. Designed & Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
